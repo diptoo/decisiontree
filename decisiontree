@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[options ]{algorithm2e}
+
+\title{Decision Tree Pseudocode}
+\author{Dipto}
+\date{June 2018}
+
+\begin{document}
+
+
+
+\maketitle
+\begin{algorithm}[H]
+\SetAlgoLined
+ \For{i to N-1}{
+ \STATE $unique\_values\gets test\_data[i]$\;
+  \For{j to len($unique\_values$)}{
+  \If {$i\neq 0$}{
+   $current\_value\gets unique\_value[i]$\;
+   $previous\_value\gets unique\_value[i-1]$\;
+   $potential\_splits[i]\gets (current\_value-previous\_value)/2$\;
+   }
+   }
+ }
+ \caption{How to write algorithms}
+\end{algorithm}
+
+\end{document}
